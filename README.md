@@ -29,6 +29,7 @@ It has 2 state (open/close) and 2 velocities (fast/slow), controlled by two bool
 
 OPEN &nbsp;=&nbsp; 0 &nbsp;|&nbsp; CLOSE &nbsp;=&nbsp; 1
 &nbsp;
+
 FAST &nbsp;&nbsp;=&nbsp; 0 &nbsp;|&nbsp; SLOW &nbsp;&nbsp;&nbsp;=&nbsp; 1
 
 ```rosservice call /OnRobot_RG2_Gripper/command "open_close: true fast_slow: true"```

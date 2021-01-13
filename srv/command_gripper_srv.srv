@@ -1,0 +1,4 @@
+bool open_close
+bool fast_slow
+---
+bool success

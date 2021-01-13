@@ -1,0 +1,6 @@
+<launch>
+	
+	<!--	OnRobot Gripper Node	-->
+	<node pkg="onrobot_gripper" type="onrobot_gripper_Node" name="onrobot_gripper_Node" output="screen"/>
+
+</launch>

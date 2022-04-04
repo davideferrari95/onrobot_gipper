@@ -44,11 +44,11 @@ include_directories(
 
 add_library(onrobot_gripper src/onrobot_gripper.cpp)
 target_link_libraries(onrobot_gripper ${catkin_LIBRARIES})
-add_dependencies(onrobot_gripper ${catkin_EXPORTED_TARGETS})
+add_dependencies(onrobot_gripper ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS})
 
 add_executable(onrobot_gripper_Node src/onrobot_gripper_Node.cpp src/onrobot_gripper.cpp)
 target_link_libraries(onrobot_gripper_Node ${catkin_LIBRARIES})
-add_dependencies(onrobot_gripper_Node ${catkin_EXPORTED_TARGETS})
+add_dependencies(onrobot_gripper_Node ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS})
 
 
 ##################################################################################################
